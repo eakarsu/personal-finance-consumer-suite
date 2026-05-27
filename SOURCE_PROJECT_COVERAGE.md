@@ -7,3 +7,6 @@
 | AICryptocurrencyTaxCalculator | 13 | 8 | 1 | 5 | aiCenter.js<br>aiNew.js<br>audit.js<br>auth.js<br>compliance.js |
 | aiFinancePlatform_backup | 7 | 0 | 0 | 1 | alerts.js<br>auth.js<br>creditScoring.js<br>fraudDetection.js<br>riskAssessment.js |
 | AiTaxPrep | 16 | 13 | 1 | 0 | advanced.js<br>advice.js<br>ai-features.js<br>ai.js<br>auth.js |
+| cash_flow | 0 | 0 | 0 | 1 | Budget Coach<br>Retirement Scenarios<br>Cash Flow Planning<br>Advisor Report |
+| financialServices | 0 | 0 | 0 | 1 | Budget Coach<br>Retirement Scenarios<br>Cash Flow Planning<br>Advisor Report |
+| AiFinancialReportGenerator | 0 | 0 | 0 | 1 | Budget Coach<br>Retirement Scenarios<br>Cash Flow Planning<br>Advisor Report |

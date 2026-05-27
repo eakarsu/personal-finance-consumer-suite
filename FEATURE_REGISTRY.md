@@ -18,3 +18,14 @@
 - Profiles
 - AI Assistant
 - AI Tools
+
+## Financial Planning Coach
+
+- Budget Coach
+- Retirement Scenarios
+- Cash Flow Planning
+- Advisor Report
+
+## Focused enhancement: Financial Planning Coach
+
+Source evidence: cash_flow, financialServices, AiFinancialReportGenerator.

@@ -7,6 +7,10 @@ Primary routes:
 - `/profiles`
 
 Feature routes:
+- `/advisor-report`
+- `/cash-flow-planning`
+- `/retirement-scenarios`
+- `/budget-coach`
 - `/records`
 - `/applications`
 - `/transactions`

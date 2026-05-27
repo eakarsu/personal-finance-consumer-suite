@@ -1,8 +1,8 @@
 # Personal Finance Consumer Suite Source Data Tables
 
-Mapped source projects: 5
+Mapped source projects: 8
 
-Detected source tables: 148
+Detected source tables: 234
 
 | Source Project | Table | Framework | Columns | Source File |
 | --- | --- | --- | ---: | --- |
@@ -84,6 +84,43 @@ Detected source tables: 148
 | aiFinancePlatform_backup | transactions | SQL | 12 | backend/prisma/migrations/20251208154639_init/migration.sql |
 | aiFinancePlatform_backup | users | Prisma | 18 | backend/prisma/schema.prisma |
 | aiFinancePlatform_backup | users | SQL | 6 | backend/prisma/migrations/20251208154639_init/migration.sql |
+| AiFinancialReportGenerator | ai_audit_analyses | SQL | 15 | backend/src/schema.sql |
+| AiFinancialReportGenerator | ai_board_reports | SQL | 18 | backend/src/schema.sql |
+| AiFinancialReportGenerator | ai_expense_categorizations | SQL | 21 | backend/src/schema.sql |
+| AiFinancialReportGenerator | ai_forecasts | SQL | 17 | backend/src/schema.sql |
+| AiFinancialReportGenerator | ai_insights | SQL | 14 | backend/src/schema.sql |
+| AiFinancialReportGenerator | ai_presentations | SQL | 13 | backend/src/schema.sql |
+| AiFinancialReportGenerator | ai_responses | SQL | 15 | backend/src/schema.sql |
+| AiFinancialReportGenerator | ai_variance_explanations | SQL | 18 | backend/src/schema.sql |
+| AiFinancialReportGenerator | anomaly_detections | SQL | 16 | backend/src/schema.sql |
+| AiFinancialReportGenerator | approvals | SQL | 10 | backend/src/routes/ai.js |
+| AiFinancialReportGenerator | audit_logs | SQL | 13 | backend/src/schema.sql |
+| AiFinancialReportGenerator | balance_sheets | SQL | 15 | backend/src/schema.sql |
+| AiFinancialReportGenerator | break_even_analyses | SQL | 15 | backend/src/schema.sql |
+| AiFinancialReportGenerator | budget_actuals | SQL | 13 | backend/src/schema.sql |
+| AiFinancialReportGenerator | capital_projects | SQL | 19 | backend/src/schema.sql |
+| AiFinancialReportGenerator | cash_flow_records | SQL | 11 | backend/src/schema.sql |
+| AiFinancialReportGenerator | companies | SQL | 7 | backend/src/schema.sql |
+| AiFinancialReportGenerator | compliance_reports | SQL | 14 | backend/src/schema.sql |
+| AiFinancialReportGenerator | custom_reports | SQL | 16 | backend/src/schema.sql |
+| AiFinancialReportGenerator | dcf_valuations | SQL | 16 | backend/src/schema.sql |
+| AiFinancialReportGenerator | expense_records | SQL | 14 | backend/src/schema.sql |
+| AiFinancialReportGenerator | financial_statements | SQL | 13 | backend/src/schema.sql |
+| AiFinancialReportGenerator | gap_features | SQL | 6 | backend/routes/batch03Gaps.js |
+| AiFinancialReportGenerator | kpi_metrics | SQL | 13 | backend/src/schema.sql |
+| AiFinancialReportGenerator | monte_carlo_simulations | SQL | 14 | backend/src/schema.sql |
+| AiFinancialReportGenerator | profit_loss_records | SQL | 13 | backend/src/schema.sql |
+| AiFinancialReportGenerator | report_execution_logs | SQL | 10 | backend/src/schema.sql |
+| AiFinancialReportGenerator | report_templates | SQL | 8 | backend/routes/customViews.js |
+| AiFinancialReportGenerator | revenue_forecasts | SQL | 13 | backend/src/schema.sql |
+| AiFinancialReportGenerator | saved_queries | SQL | 7 | backend/src/schema.sql |
+| AiFinancialReportGenerator | scenario_analyses | SQL | 11 | backend/src/schema.sql |
+| AiFinancialReportGenerator | scheduled_reports | SQL | 15 | backend/src/schema.sql |
+| AiFinancialReportGenerator | scheduled_scans | SQL | 11 | backend/src/routes/scheduledScans.js |
+| AiFinancialReportGenerator | tax_reports | SQL | 14 | backend/src/schema.sql |
+| AiFinancialReportGenerator | trend_analyses | SQL | 12 | backend/src/schema.sql |
+| AiFinancialReportGenerator | users | SQL | 8 | backend/src/schema.sql |
+| AiFinancialReportGenerator | working_capital_analyses | SQL | 17 | backend/src/schema.sql |
 | AIPersonalFinanceMultiAgent | accounts | SQL | 11 | backend/models/schema.sql |
 | AIPersonalFinanceMultiAgent | agent_detected_subscriptions | SQL | 9 | backend/models/migrate.js |
 | AIPersonalFinanceMultiAgent | ai_analysis_results | SQL | 5 | backend/models/migrate.js |
@@ -154,3 +191,52 @@ Detected source tables: 148
 | AiTaxPrep | user_expenses | SQL | 12 | server/db/migrate.js |
 | AiTaxPrep | user_sessions | SQL | 9 | server/db/migrate-features.js |
 | AiTaxPrep | users | SQL | 15 | server/db/migrate.js |
+| cash_flow | gap_features | SQL | 5 | src/api/routes/batch09GapAi.js |
+| cash_flow | gap_features | SQL | 5 | src/api/routes/batch09GapNonai.js |
+| financialServices | AIAnalysis | Prisma | 8 | prisma/schema.prisma |
+| financialServices | AIInsight | Prisma | 8 | prisma/schema.prisma |
+| financialServices | AuditLog | Prisma | 8 | prisma/schema.prisma |
+| financialServices | BankAccount | Prisma | 17 | prisma/schema.prisma |
+| financialServices | Budget | Prisma | 8 | prisma/schema.prisma |
+| financialServices | BudgetLine | Prisma | 7 | prisma/schema.prisma |
+| financialServices | ChartOfAccount | Prisma | 16 | prisma/schema.prisma |
+| financialServices | Client | Prisma | 49 | prisma/schema.prisma |
+| financialServices | ClientAssignment | Prisma | 6 | prisma/schema.prisma |
+| financialServices | ClientContact | Prisma | 11 | prisma/schema.prisma |
+| financialServices | Document | Prisma | 25 | prisma/schema.prisma |
+| financialServices | DocumentFolder | Prisma | 6 | prisma/schema.prisma |
+| financialServices | DocumentRequest | Prisma | 7 | prisma/schema.prisma |
+| financialServices | DocumentRequestTemplate | Prisma | 9 | prisma/schema.prisma |
+| financialServices | DocumentSignature | Prisma | 9 | prisma/schema.prisma |
+| financialServices | DocumentTemplate | Prisma | 9 | prisma/schema.prisma |
+| financialServices | DocumentVersion | Prisma | 7 | prisma/schema.prisma |
+| financialServices | Employee | Prisma | 32 | prisma/schema.prisma |
+| financialServices | EmployeeTaxForm | Prisma | 9 | prisma/schema.prisma |
+| financialServices | Engagement | Prisma | 15 | prisma/schema.prisma |
+| financialServices | EstimatedPayment | Prisma | 9 | prisma/schema.prisma |
+| financialServices | FinancialHealthScore | Prisma | 13 | prisma/schema.prisma |
+| financialServices | FinancialReport | Prisma | 8 | prisma/schema.prisma |
+| financialServices | Firm | Prisma | 21 | prisma/schema.prisma |
+| financialServices | FirmSettings | Prisma | 10 | prisma/schema.prisma |
+| financialServices | Integration | Prisma | 10 | prisma/schema.prisma |
+| financialServices | Invoice | Prisma | 24 | prisma/schema.prisma |
+| financialServices | InvoiceLineItem | Prisma | 7 | prisma/schema.prisma |
+| financialServices | InvoicePayment | Prisma | 8 | prisma/schema.prisma |
+| financialServices | JournalEntry | Prisma | 10 | prisma/schema.prisma |
+| financialServices | JournalLine | Prisma | 8 | prisma/schema.prisma |
+| financialServices | Note | Prisma | 7 | prisma/schema.prisma |
+| financialServices | PayrollItem | Prisma | 16 | prisma/schema.prisma |
+| financialServices | PayrollRun | Prisma | 18 | prisma/schema.prisma |
+| financialServices | Receipt | Prisma | 11 | prisma/schema.prisma |
+| financialServices | Reconciliation | Prisma | 9 | prisma/schema.prisma |
+| financialServices | ReportTemplate | Prisma | 9 | prisma/schema.prisma |
+| financialServices | ServiceItem | Prisma | 8 | prisma/schema.prisma |
+| financialServices | Task | Prisma | 14 | prisma/schema.prisma |
+| financialServices | TaxChecklistItem | Prisma | 10 | prisma/schema.prisma |
+| financialServices | TaxChecklistTemplate | Prisma | 10 | prisma/schema.prisma |
+| financialServices | TaxDeadline | Prisma | 9 | prisma/schema.prisma |
+| financialServices | TaxOrganizer | Prisma | 10 | prisma/schema.prisma |
+| financialServices | TaxReturn | Prisma | 17 | prisma/schema.prisma |
+| financialServices | TimeEntry | Prisma | 14 | prisma/schema.prisma |
+| financialServices | Transaction | Prisma | 21 | prisma/schema.prisma |
+| financialServices | User | Prisma | 23 | prisma/schema.prisma |
